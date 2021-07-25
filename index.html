@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ゆきにゃあのバッハとお散歩</title>
-    <link rel="icon" href="favicon.ico">
-    <meta name="description" content="ゆきにゃあのBACHとお散歩のサイトです。">
-    <link rel="stylesheet" href="css/styles.css">
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Carousel</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+  <body>
     <header>
-      <div class="container">
-         <div class="icon">
-            <img src="img\neko.top.gif" width="160" height="110" alt="ゆきにゃあのお散歩アイコンです"> 
-         </div>
-      <div class="info">
-            <h1>バッハとお散歩</h1>
-            <p>音楽家バッハ大好きゆきにゃあのページ</p> 
-    　　　　<ul>
-              <li>
-                  <a href="https://yukikohiga-sys.github.io/yukikohiga-sys.p5.practice/">
-                  <img src="img/blog.png" width="20" height="20" alt="ブログサイトのリンク画像">
-                  </a>
-                </li>
-              <li>
-                  <!-- <a href="https://dotinstall.com" > -->
-                  <img src="img/photos.png" width="20" height="20" alt="写真サイトのリンク画像">
-                  </a>
-            </li>
-           </ul>
+        <div class="container1">
+           <div class="icon">
+              <img src="img\neko.top.gif" width="160" height="110" alt="ゆきにゃあのお散歩アイコンです"> 
+           </div>
+        <div class="info">
+              <h1>バッハとお散歩</h1>
+              <p>音楽家バッハのページ</p> 
+      <!--<ul> -->
+              
+                
+             <!-- </ul> -->
+          </div>
         </div>
-      </div>
-
-
-    
-     </header>
-
-     
-      <section class="works">
-        <h1>バッハがこちらに差し出すものは　「１４のカノン」のテーマとなる８音</h1>
-        <a href="page2.html"><img src="img\neko.page2.1.gif" width="180" height="140" alt="肖像画の手元の画像です"></a>
-         
-    </section>
-    
-    <section class="works">
-       <h1>「１４のカノン」の１　カニ　逆行系</h1>
-        <img src="img\b.png" width="180" height="140" alt="カニのような楽譜イメージ画像です">
-    </section>  
-    
-    
-    <section class="works">
-       <h1>「１４のカノン」の３　上下が逆　反行カノン</h1>
-        <img src="img\c.png" width="180" height="100" alt="上下逆さまの楽譜イメージです">
-    </section> 
+  </header>
 
 
 
 
-    
+  <section class="works">
+    　　<img src="img\score.img1.jpg" width="180" 　　　height="100" alt="バッハ「１４のカノン」13番の楽譜です">
+    　　<img src="img\score.canon.1.simplex.gif" width="180" 　　　height="40" alt="バッハ「１４のカノン」のテーマとなる８音イメージ画像です">
 
-   
 
-    <div class="fukidasi-container">
-      <ul class="messages">
-        
-        <li class="right-side">
-          <div class="pic">
-            <img src="img/dog.png">
-          </div>
-          <div class="text">
-            こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。
-          </div>
-        </li>
-        
+
+      <h1>
+        「１４のカノン」のテーマとなる８音
+        バッハがこちらに向かって差し出してる楽譜の一番下に書いてある音でもあります</h1>
+
+        <figure>
+          <figcaption>こんな曲だよ</figcaption>
+          <audio
+              controls
+              src="img\canon1.simplex.mp3">
+                  Your browser does not support the
+                  <code>audio</code> element.
+          </audio>
+      </figure>
+  </section>   
+
+
+  <section class="carousel">
+    <div class="container">
+      <ul>
+        <li><img src="img/pic5.png"></li>
+        <li><img src="img/pic6.png"></li>
+        <li><img src="img/pic7.png"></li>
+        <li><img src="img/pic8.png"></li>
+        <li><img src="img/pic9.png"></li>
+        <li><img src="img/pic10.png"></li>
       </ul>
+  
+      <button id="prev">&laquo;</button>
+      <button id="next">&raquo;</button>
     </div>
+  
+    <nav>
+    </nav>
+  </section>
 
 
-        
-    
-    
 
 
-    
-   
-    
-    
-    <script src="js/main.js"></script>
 
-</body> 
 
-<footer>
-        <p> yuki_nya</p>
-</footer>
+
+  <div class="fukidasi-container">
+    <ul class="messages">
+      
+      <li class="right-side">
+        <div class="pic">
+          <img src="img/otamajakusi.icon.png">
+        </div>
+        <div class="text">
+          こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。こんにちは。こんにちわ。
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+  <section class="works">
+    <h1>お散歩どこからともなくあらわれたあの有名な肖像画</h1>
+    <a href="page2.html"><img src="img\button1.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
+     
+</section>
+
+<section class="works">
+   <h1>「１４のカノン」の１　カニ　逆行系</h1>
+    <img src="img\button.3.png" width="180" height="100" alt="カニのような楽譜イメージ画像です">
+</section>  
+
+
+<section class="works">
+   <h1>「１４のカノン」の３　上下が逆　反行カノン</h1>
+    <img src="img/button.4.png" width="180" height="100" alt="上下逆さまの楽譜イメージです">
+</section> 
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
 </html>

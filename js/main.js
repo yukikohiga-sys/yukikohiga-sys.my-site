@@ -1,27 +1,71 @@
 'use strict';
 
+{
+  const next = document.getElementById('next');
+  const prev = document.getElementById('prev');
+  const ul = document.querySelector('ul');
+  const slides = ul.children;
+  const dots = [];
+  let currentIndex = 0;
 
+  function updateButtons() {
+    prev.classList.remove('hidden');
+    next.classList.remove('hidden');
 
+    if (currentIndex === 0) {
+      prev.classList.add('hidden');
+    }
+    if (currentIndex === slides.length - 1) {
+      next.classList.add('hidden');
+    }
+  }
 
-// {
-//   const btn = document.getElementById('btn');
+  function moveSlides() {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    ul.style.transform = `translateX(${-1 * slideWidth * currentIndex}px)`;
+  }
 
-//   btn.addEventListener('click', () => {
-//     const results = ['大吉', '中吉', '大吉', '末吉'];
-    // const n = Math.floor(Math.random() * results.length);
-    // btn.textContent = results[n];
-    // btn.textContent = results[Math.floor(Math.random() * results.length)];
+  function setupDots() {
+    for (let i = 0; i < slides.length; i++) {
+      const button = document.createElement('button');
+      button.addEventListener('click', () => {
+        currentIndex = i;
+        updateDots();
+        updateButtons();
+        moveSlides();
+      });
+      dots.push(button);
+      document.querySelector('nav').appendChild(button);
+    }
 
-    // switch (n) {
-    //   case 0:
-    //     btn.textContent = '大吉';
-    //     break;
-    //   case 1:
-    //     btn.textContent = '中吉';
-    //     break;
-    //   case 2:
-    //     btn.textContent = '凶';
-    //     break;
-    // }
-//   });
-// }
+    dots[0].classList.add('current');
+  }
+
+  function updateDots() {
+    dots.forEach(dot => {
+      dot.classList.remove('current');
+    });
+    dots[currentIndex].classList.add('current');
+  }
+
+  updateButtons();
+  setupDots();
+
+  next.addEventListener('click', () => {
+    currentIndex++;
+    updateButtons();
+    updateDots();
+    moveSlides();
+  });
+
+  prev.addEventListener('click', () => {
+    currentIndex--;
+    updateButtons();
+    updateDots();
+    moveSlides();
+  });
+
+  window.addEventListener('resize', () => {
+    moveSlides();
+  });
+}
