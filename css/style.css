@@ -15,9 +15,21 @@ body {
      margin-left: auto;
      margin-right: auto;
      align-items: center;
-     padding-top: 32px;
      padding-bottom: 30px;
    }
+   .footer-text{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+   }
+
+   footer {
+    padding: 64px 0;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, .8);
+    color: #98969c;
+    text-align: center;
+  }
    
    
    .container1 {
@@ -105,7 +117,7 @@ body {
     border: none;
     background: rgba(0, 0, 0, .8);
     color: #fff;
-    font-size: 24px;
+    font-size: 34px;
     padding: 0 8px 4px;
     cursor: pointer;
   }
@@ -128,7 +140,7 @@ body {
   }
   
   nav {
-    margin-top: 16px;
+    margin-top: 36px;
     text-align: center;
   }
   
@@ -138,11 +150,12 @@ body {
   
   nav button {
     border: none;
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 26px;
     background: #ddd;
     border-radius: 50%;
     cursor: pointer;
+    margin-bottom: 18px;
   }
   
   nav .current {
@@ -150,6 +163,7 @@ body {
   }
 
    
+  /* 吹き出し */
 
   .fukidasi-container {
     padding: 32px;
@@ -216,14 +230,45 @@ body {
 
 
 
+/* トップページ最初の見出し画像 */
+.works-top {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
+.works-top > h1 {
+  
+    /* background-color: cadetblue; */
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 30px;
+}
+/* トップページ次の見出し画像 */
+.works-top-a {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.works-top-a > h1 {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
 
 
 
 
 
 .works {
-    width: 180px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -231,10 +276,9 @@ body {
     font-weight: normal;
     font-size: 18px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
-
 
   .works> section  {
     margin-bottom: 60px;
@@ -244,4 +288,5 @@ body {
     margin-right: auto;
     text-align: center;
 }
+
 
