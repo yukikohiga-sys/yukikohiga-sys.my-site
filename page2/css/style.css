@@ -226,7 +226,8 @@ body {
       width: 180px;
       margin-left: auto;
       margin-right: auto;
-  }
+      cursor: pointer;
+     }
   .works > h1 {
       font-weight: normal;
       font-size: 18px;
