@@ -234,34 +234,36 @@ body {
 .works-top {
     width: 200px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
 }
-
 .works-top > h1 {
-  
-    /* background-color: cadetblue; */
     font-weight: normal;
     font-size: 18px;
     text-align: center;
     margin-top: 34px;
     margin-bottom: 30px;
 }
+.works-top> section  {
+  margin-bottom: 60px;
+}
+
 /* トップページ次の見出し画像 */
 .works-top-a {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    
+}
+.works-top-a > h1 {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 30px;
+}
+.works-top-a> section  {
+margin-bottom: 60px;
 }
 
-.works-top-a > h1 {
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 4px;
-    margin-bottom: 30px;
-}
 
 
 
