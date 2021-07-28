@@ -19,7 +19,14 @@ body {
        padding-bottom: 30px;
      }
      
-     
+     footer {
+      padding: 64px 0;
+      margin-top: 20px;
+      background: rgba(0, 0, 0, .8);
+      color: #98969c;
+      text-align: center;
+    }
+
      .container1 {
          /* background-color:green; */
          width: 400px;
@@ -105,7 +112,7 @@ body {
       border: none;
       background: rgba(0, 0, 0, .8);
       color: #fff;
-      font-size: 24px;
+      font-size: 34px;
       padding: 0 8px 4px;
       cursor: pointer;
     }
@@ -138,8 +145,8 @@ body {
     
     nav button {
       border: none;
-      width: 16px;
-      height: 16px;
+      width: 26px;
+      height: 26px;
       background: #ddd;
       border-radius: 50%;
       cursor: pointer;
@@ -216,12 +223,34 @@ body {
   
   
   
+  /* オーディオのあたり */
+  
+    .works-score{
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+     }
+  .works-score > h1 {
+      font-weight: normal;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
   
   
+    .works-score> section  {
+      margin-bottom: 60px;
+  }
+    .works-score> figure  {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
   
   
-  
-  
+  /* フッターの直前のあたり */
     .works {
       width: 180px;
       margin-left: auto;
@@ -240,8 +269,4 @@ body {
     .works> section  {
       margin-bottom: 60px;
   }
-    .works> figure  {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-  }
+    
