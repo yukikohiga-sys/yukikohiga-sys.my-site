@@ -1,71 +1,23 @@
 'use strict';
 
-{
-  const next = document.getElementById('next');
-  const prev = document.getElementById('prev');
-  const ul = document.querySelector('ul');
-  const slides = ul.children;
-  const dots = [];
-  let currentIndex = 0;
-
-  function updateButtons() {
-    prev.classList.remove('hidden');
-    next.classList.remove('hidden');
-
-    if (currentIndex === 0) {
-      prev.classList.add('hidden');
-    }
-    if (currentIndex === slides.length - 1) {
-      next.classList.add('hidden');
-    }
-  }
-
-  function moveSlides() {
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    ul.style.transform = `translateX(${-1 * slideWidth * currentIndex}px)`;
-  }
-
-  function setupDots() {
-    for (let i = 0; i < slides.length; i++) {
-      const button = document.createElement('button');
-      button.addEventListener('click', () => {
-        currentIndex = i;
-        updateDots();
-        updateButtons();
-        moveSlides();
-      });
-      dots.push(button);
-      document.querySelector('nav').appendChild(button);
-    }
-
-    dots[0].classList.add('current');
-  }
-
-  function updateDots() {
-    dots.forEach(dot => {
-      dot.classList.remove('current');
-    });
-    dots[currentIndex].classList.add('current');
-  }
-
-  updateButtons();
-  setupDots();
-
-  next.addEventListener('click', () => {
-    currentIndex++;
-    updateButtons();
-    updateDots();
-    moveSlides();
+// document.getElementById('target1').addEventListener('click', () => {
+//     document.getElementById('target1').classList.toggle('circle1');
+//   });
+document.getElementById('target2').addEventListener('click', () => {
+    document.getElementById('target2').classList.toggle('circle2');
+  });
+document.getElementById('target3').addEventListener('click', () => {
+    document.getElementById('target3').classList.toggle('circle3');
   });
 
-  prev.addEventListener('click', () => {
-    currentIndex--;
-    updateButtons();
-    updateDots();
-    moveSlides();
-  });
 
-  window.addEventListener('resize', () => {
-    moveSlides();
-  });
+
+// 音の再生
+  function audioPlay(){
+    document.getElementById("audio").play();
+}
+ 
+//再生を停止
+function audioPause(){
+    document.getElementById("audio").pause();
 }
