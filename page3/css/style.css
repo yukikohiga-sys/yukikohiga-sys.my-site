@@ -205,7 +205,11 @@ input[type="button"] {
     
     
     
-    
+    /* つづきを読むリンク */
+.works{
+  margin: auto;
+  text-align: center;
+}
     
     
     
