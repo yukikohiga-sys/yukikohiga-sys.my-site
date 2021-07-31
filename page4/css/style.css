@@ -1,6 +1,6 @@
 body {
     /* background-color: pink; */
-    align-items: center;
+      align-items: center;
       color: #333;
       font-family: Verdana,  sans-serif;
       margin: 0;
@@ -66,51 +66,21 @@ body {
 
 /* 画像を反転させる */
 
-.container2 {
-  /* background-color:green; */
+/* .container2 {
+  background-color:palegoldenrod;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;  
-}
-
-.image2 {
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.image2 img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
+  display: flex;
   align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
+} */
 
-.image3 {
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  align-items: center;
-  user-select: none;
-  
-}
 
-.image3 img {
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  user-select: none;
-}
-
+/* オーディオボタン */
 input[type="button"] {
  
   cursor: pointer;
+  
 }
 
 
@@ -130,14 +100,23 @@ input[type="button"] {
          transform: scale(1,-1);
          transition-duration: 2s;
          user-select: none;
+         cursor: pointer;
         
         }
     
     .circle3 {
-        transform: translateX(100px);
+         margin-left: auto;
+         margin-right: auto;
+         transform: scale(1,-1);
+         transition-duration: 3s;
+         user-select: none;
+         cursor: pointer;
+
+        /* transform: translateX(100px);
         transition-duration: 1s;
         transform: rotate(-180deg);
-        user-select: none;
+        cursor: pointer;
+        user-select: none; */
     }
 
 
@@ -146,7 +125,9 @@ input[type="button"] {
      
      /* チャット風の会話 */
      .fukidasi-container {
-        padding: 32px;
+       /* background-color: palegreen; */
+        padding: 0px;
+        margin-top: 10px;
         
       }
       
@@ -211,36 +192,25 @@ input[type="button"] {
     
     
     /* つづきを読むリンク */
-.works{
-  margin: auto;
-  text-align: center;
-}
-    
-    
-    
-    
-    
-      .works {
-        width: 180px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+   .works{
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+    } 
+      
     .works > h1 {
         font-weight: normal;
         font-size: 18px;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .works  img {
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
         margin-bottom: 0px;
     }
     
-    
-      .works> section  {
-        margin-bottom: 60px;
-    }
-      .works> figure  {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-   

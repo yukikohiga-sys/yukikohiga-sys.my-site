@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>14のカノンの3曲目</title>
+  <title>バッハとお散歩</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
@@ -15,141 +15,115 @@
            </div>
         <div class="info">
               <h1>バッハとお散歩</h1>
-              <p>音楽家バッハのページ</p> 
-      <!--<ul> --    </ul> -->
+              <p>バッハとプログラミングって何か関係あるのかな？なーんてことをゆる～く考えながら今日もお散歩☆</p> 
+      <!-- ここにulタグがあったけど下のulにより不具合下のulにid着けるとよいと後にわかる -->
           </div>
         </div>
   </header>
-  
-         
-  <div class="fukidasi-container">
-     <ul class="messages">
-    
-        <li class="right-side">
-           <div class="pic">
-             <img src="img/otamajakusi.a.png">
-           </div>
-            <div class="text">
-              こんどは上下逆さまになりますよ。同じように、下の8音の楽譜をクリックしてみてくださいね！
-        </div>
-        </li>
-    </ul>
-</div>
-        
 
-<div class="works"id="target2">
-   <h1>こちらの楽譜をクリックしてみてね！</h1>
-      <img src="img\score.a-thumbnail2.gif" width="240" height="60" alt="楽譜イメージ画像です">
-</div>
-
-<div class="works"id="target3">
-      <img src="img\button.4.png" width="332" height="230" alt="上下逆さまの楽譜イメージ画像です">
-      <img src="img\score.a-thumbnail2.gif" width="240" height="60" alt="楽譜イメージ画像です">
-</div>
- <!-- <img src="img\button.4.png"width="332" height="230" alt="上下逆さまの楽譜イメージ画像です">  -->
-
-<section class="works">
-     <h1>その逆さまになった音が、こちら「１４のカノン」3曲目にみられます</h1>
-       <img src="img\14-3-thumbnail2.gif" width="420" height="140" alt="楽譜イメージ画像です">
-    <audio id="audio" preload="auto">
-        <source src="img\canon14.3.mp3" type="audio/mp3">
-        <p>※ご利用のブラウザでは再生することができません。</p>
+  <section class="works-top">
+    <h1>
+    はじめまして。わたしはねこのゆきにゃあと申します。</h1>
 </section>
 
-<section class="works">
-  </audio>
-     <input type="button" onclick="audioPlay()" value="再生">
-     <input type="button" onclick="audioPause()" value="停止"> 
-  <li>こんな曲だよ</li></section>
+
+<section class="carousel">
+    <div class="container">
+      <ul>
+        <li><img src="img/pppic1.png"></li>
+        <li><img src="img/pic2.png"></li>
+        <li><img src="img/pic3.png"></li>
+        <li><img src="img/pic4.png"></li>
+      </ul>
+  
+      <button id="prev">&laquo;</button>
+      <button id="next">&raquo;</button>
+    </div>
+  
+    <nav>
+    </nav>
+</section>
+
+
+<section class="works-top-a">
+    <h1>ゆきにゃあはバッハが大好きです。ある日、たまたまあの有名な肖像画の中でバッハがこちらに差し出している紙は、</h1>
+
+  　<img src="img\bach.png" 　width="160" height="200" alt="肖像画の手元の画像です"><h1>れっきとした楽譜で、それはBWV1087「１４のカノン」という曲だったんだ！と知りました。
+  　</h1>
+</section>
+
+<!-- オーディオ -->
+<div class="works-top-a">
+  <!-- <div class="image3"> -->
+        <img src="img/score.img1.jpg"  width="180" height="100" alt="bachのbwv1087の13番の楽譜です">
+  
+      <audio id="audio" preload="auto">
+           <source src="img/canon.13.mp3" type="audio/mp3">
+           <p>※ご利用のブラウザでは再生することができません。</p>
+      </audio>
+            <input type="button" onclick="audioPlay()" value="再生">
+            <input type="button" onclick="audioPause()" value="停止"> 
+            <p>こんな曲だよ</p>
+   </div>
+</div>
+
+  <!-- <section class="works-top-a">
+    　　<img src="img\score.img1.jpg" width="180" 　　　height="100" alt="bachのbwv1087の13番の楽譜です">
+       <figure>
+           <figcaption>こんな曲だよ</figcaption>
+            <audio
+                controls
+                  src="img\canon.13.mp3">
+                  Your browser does not support the
+                  <code>audio</code> element.
+            </audio>
+      </figure>
+  </section>    -->
 
 
 
-
-
-     <!-- <div class="container2"id="target2">
-        <div class="score1">
-          <img src="img\score.a-thumbnail2.gif"  width="200" height="40" alt="楽譜イメージ画像です">
-        
-          <div class="score-img"> <img src="img\button.4.png"width="332" height="230" alt="上下逆さまの楽譜イメージ画像です"> </div>
-         
-          <li>テーマとなる8音</li> -->
-       <!-- </div>
-     </div>  -->
-
-
-  <!-- <div class="container3">
-      <div class="score2">
-            <img src="img\14-3-thumbnail2.gif"  width="400" height="140" alt="14のカノンの3曲目の楽譜イメージ画像です">
-      
-          <audio id="audio" preload="auto">
-               <source src="img\canon14.3.mp3" type="audio/mp3">
-               <p>※ご利用のブラウザでは再生することができません。</p>
-          </audio>
-                <input type="button" onclick="audioPlay()" value="再生">
-                <input type="button" onclick="audioPause()" value="停止"> 
-             <li>こんな曲だよ</li>
-       </div>
-   </div> -->
-
-
-
-<div class="fukidasi-container">
+  <div class="fukidasi-container">
     <ul class="messages">
       
       <li class="right-side">
         <div class="pic">
-          <img src="img\neko.icon.png">
+          <img src="img/neko.icon.png">
         </div>
         <div class="text">
-          にゃ！たしかに逆さまになってるのにゃ！
+          この楽譜は14曲あるうちの13番目だったのにゃ。いい曲なのにゃ！
         </div>
       </li>
-
+      
     </ul>
   </div>
 
 <!-- つづきを読むリンク -->
-
+  <section class="works">
+    <a href="page2/index.html">つづきを読む➯</a>
+   </section>
   
-  <section class="works">
-     <a href="../index.html">top pageに戻る➯</a>
-     </section>
 
-  <section class="works">
-    <h1>お散歩どこからともなくあらわれたあの有名な肖像画</h1>
-    <a href="../index.html"><img src="img\button1.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
+<section class="works">
+    <h1>バッハがこちらに差し出している楽譜の3段目にもある音、それはこんな音</h1>
+    <a href="page2/index.html"><img src="img\button2.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
 </section>
 
-  <section class="works">
-    <h1>バッハがこちらに差し出すものは　「１４のカノン」のテーマとなる８音</h1>
-    <a href="../page2/index.html"><img src="img\button2.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
-　</section>
+<section class="works">
+    <h1>14曲のうちの１曲目です。テーマとなる８音を後ろから反対に演奏しているらしいのです。</h1>
+    <a href="page3/index.html"><img src="page4\img\button.3.png" width="180" height="100" alt="カニのような楽譜イメージ画像です"></a>
+</section>
 
-  <section class="works">
-    <h1>８音を後ろから反対に演奏しているらしい</h1>
-    <a href="../page3/index.html"><img src="img\button.3.png" width="180" height="100" alt="肖像画の手元の画像です"></a>
-　</section> 
-
-
-
-  
+<section class="works">
+    <h1>14曲のうちの３曲目です。　上下が逆さまにもなってるらしいのです。反行カノンとも呼ばれているらしい？</h1>
+    <a href="page4/index.html"><img src="page4\img\button.4.png" width="180" height="100" alt="上下逆さまの楽譜イメージ画像です"></a>
+</section>
 
 
+  <script src="js/main.js"></script>
 
-<footer>
-  <li class="footer-text">y.n.tulip@gmail.com</li>
-</footer>
-  
-
-
-<script src="js/main.js"></script>
-
+  <footer>
+    <li class="footer-text">y.n.tulip@gmail.com</li>
+  </footer>
 </body>
 
-
-
 </html>
-
-
-
-
